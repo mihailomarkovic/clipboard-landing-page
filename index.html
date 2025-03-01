@@ -23,7 +23,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__flex">
+      <div class="flex-container">
         <div class="header__logo">
           <img src="images/logo.svg" alt="header logo" />
         </div>
@@ -42,25 +42,41 @@
     </header>
 
     <section class="section-desktop">
-      <h2 class="heading-secondary">Keep track of your snippets</h2>
-      <p class="text">
-        Clipboard instantly stores any item you copy in the cloud, meaning you
-        can access your snippets immediately on all your devices. Our Mac and
-        iOS apps will help you organize everything.
-      </p>
-      <h3 class="subheading">Quick Search</h3>
-      <p class="text">
-        Easily search your snippets by content, category, web address,
-        application, and more.
-      </p>
-      <h3 class="subheading">iCloud Sync</h3>
-      <p class="text">
-        Instantly saves and syncs snippets across all your devices.
-      </p>
-      <h3 class="subheading">Complete History</h3>
-      <p class="text">
-        Retrieve any snippets from the first moment you started using the app.
-      </p>
+      <div class="flex-container">
+        <h2 class="heading-secondary">Keep track of your snippets</h2>
+        <p class="text">
+          Clipboard instantly stores any item you copy in the cloud, meaning you
+          can access your snippets immediately on all your devices. Our Mac and
+          iOS apps will help you organize everything.
+        </p>
+      </div>
+      <div class="section-desktop__sides--container">
+        <div class="section-desktop__right--side">
+          <img src="images/image-computer.png" alt="Image of computer" />
+        </div>
+        <div class="section-desktop__left--side">
+          <div>
+            <h3 class="subheading">Quick Search</h3>
+            <p class="text">
+              Easily search your snippets by content, category, web address,
+              application, and more.
+            </p>
+          </div>
+          <div>
+            <h3 class="subheading">iCloud Sync</h3>
+            <p class="text">
+              Instantly saves and syncs snippets across all your devices.
+            </p>
+          </div>
+          <div>
+            <h3 class="subheading">Complete History</h3>
+            <p class="text">
+              Retrieve any snippets from the first moment you started using the
+              app.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="section-tablet-phone">

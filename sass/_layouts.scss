@@ -1,0 +1,17 @@
+.section-desktop {
+  text-align: center;
+  &__sides--container {
+    text-align: left;
+    display: flex;
+    gap: 15rem;
+
+    margin-top: 7.5rem;
+  }
+
+  &__left--side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 25%;
+  }
+}

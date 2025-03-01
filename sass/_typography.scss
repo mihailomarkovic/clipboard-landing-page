@@ -5,12 +5,18 @@
 }
 
 .heading-primary {
-  padding-top: 3rem;
+  margin-top: 3rem;
   font-size: $font-size-huge;
+}
+
+.heading-secondary {
+  margin-top: 15rem;
+  font-size: $font-size-big;
 }
 
 .text {
   color: $color-grayish-blue;
+  margin-top: 2rem;
 }
 
 .btn--ios {
