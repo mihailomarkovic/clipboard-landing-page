@@ -1,0 +1,13 @@
+.btn {
+  border: none;
+  font-family: inherit;
+  font-size: $font-size-medium;
+  padding: 1.6rem 2.4rem;
+  cursor: pointer;
+  border-radius: 100px;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: translateY(-10%);
+  }
+}
