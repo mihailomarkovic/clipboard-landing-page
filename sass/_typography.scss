@@ -4,13 +4,11 @@
   color: $color-dark-grayish-blue;
 }
 
-.text {
-  color: $color-grayish-blue;
+.heading-primary {
+  padding-top: 3rem;
+  font-size: $font-size-huge;
 }
 
-.header {
-  text-align: center;
-  background-image: url(../images/bg-header-desktop.png);
-  background-size: cover;
-  height: 60vh;
+.text {
+  color: $color-grayish-blue;
 }

@@ -1,8 +1,16 @@
+// COLORS
+
 $color-cyan: hsl(171, 66%, 44%);
 $color-light-blue: hsl(233, 100%, 69%);
 
 $color-dark-grayish-blue: hsl(210, 10%, 33%);
 $color-grayish-blue: hsl(201, 11%, 66%);
+
+// FONT SIZES
+
+$font-size-medium: 1.8rem;
+$font-size-big: 2.4rem;
+$font-size-huge: 3.9rem;
 
 *,
 *::before,
@@ -18,7 +26,7 @@ html {
 }
 
 body {
-  font-size: 1.8rem;
+  font-size: $font-size-medium;
   font-family: "Bai Jamjuree", sans-serif;
   font-weight: 400;
   font-style: normal;
