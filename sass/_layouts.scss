@@ -1,7 +1,5 @@
 .section-desktop {
-  text-align: center;
   &__sides--container {
-    text-align: left;
     display: flex;
     gap: 15rem;
 
@@ -14,4 +12,10 @@
     justify-content: space-evenly;
     width: 25%;
   }
+}
+
+.cards {
+  margin-top: 7.5rem;
+  display: flex;
+  justify-content: space-between;
 }
