@@ -1,0 +1,25 @@
+{
+  "name": "clipboard-landing-page",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
+    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mihailomarkovic/clipboard-landing-page.git"
+  },
+  "author": "Mihailo Markovic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mihailomarkovic/clipboard-landing-page/issues"
+  },
+  "homepage": "https://github.com/mihailomarkovic/clipboard-landing-page#readme",
+  "description": "",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

@@ -1,0 +1,16 @@
+.heading-primary,
+.heading-secondary,
+.subheading {
+  color: $color-dark-grayish-blue;
+}
+
+.text {
+  color: $color-grayish-blue;
+}
+
+.header {
+  text-align: center;
+  background-image: url(../images/bg-header-desktop.png);
+  background-size: cover;
+  height: 60vh;
+}
