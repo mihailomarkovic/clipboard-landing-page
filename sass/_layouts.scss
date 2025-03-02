@@ -46,6 +46,7 @@
   justify-items: start;
   align-items: center;
   height: 15rem;
+  margin-top: $margin-top-huge;
 
   background-color: $color-grayish;
 
@@ -60,10 +61,12 @@
   &__link:link {
     text-decoration: none;
     color: $color-grayish-blue;
+    transition: all 0.3s;
   }
 
   &__link:hover,
   &__link:active {
+    color: $color-cyan;
   }
 
   &__item--1 {
@@ -80,8 +83,40 @@
   &__social--links {
     grid-column: 7 / -1;
     grid-row: 1 / -1;
-
     justify-self: center;
+
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+  }
+
+  .social-link--1 {
+    mask-image: url("/images/icon-facebook.svg");
+    -webkit-mask-image: url("/images/icon-facebook.svg");
+  }
+  .social-link--2 {
+    mask-image: url("/images/icon-twitter.svg");
+    -webkit-mask-image: url("/images/icon-twitter.svg");
+  }
+  .social-link--3 {
+    mask-image: url("/images/icon-instagram.svg");
+    -webkit-mask-image: url("/images/icon-instagram.svg");
+  }
+
+  &__social--link:link,
+  &__social--link:visited {
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: $color-dark-grayish-blue;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    transition: all 0.3s;
+  }
+
+  &__social--link:hover,
+  &__social--link:active {
+    background-color: $color-cyan;
   }
 
   &__attribution {

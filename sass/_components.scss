@@ -42,3 +42,14 @@
     height: 5rem;
   }
 }
+
+.highlight:link,
+.highlight:visited {
+  text-decoration: none;
+  color: $color-cyan;
+  transition: all 0.3s;
+}
+.highlight:active,
+.highlight:hover {
+  color: $color-light-blue;
+}
