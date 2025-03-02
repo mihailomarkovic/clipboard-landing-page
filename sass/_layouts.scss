@@ -15,6 +15,16 @@
   &__sides--container {
     display: flex;
     gap: 15rem;
+
+    @media only screen and (max-width: $bp-largest) {
+      gap: 5rem;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
   }
 
   &__left--side {
@@ -23,6 +33,12 @@
     justify-content: space-evenly;
     width: 25%;
     margin-top: $margin-top-medium;
+
+    @media only screen and (max-width: $bp-large) {
+      flex-direction: row;
+      width: 95%;
+      gap: 5rem;
+    }
   }
 }
 
@@ -34,9 +50,19 @@
 
 .section-logos {
   margin: $margin-top-huge 10rem 0 10rem;
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   align-items: center;
+  justify-items: center;
+
+  @media only screen and (max-width: $bp-largest) {
+    margin: $margin-top-huge 5rem 0 5rem;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15rem;
+  }
 }
 
 .footer {
@@ -97,6 +123,7 @@
   .social-link--2 {
     mask-image: url("/images/icon-twitter.svg");
     -webkit-mask-image: url("/images/icon-twitter.svg");
+    mask-position: center;
   }
   .social-link--3 {
     mask-image: url("/images/icon-instagram.svg");

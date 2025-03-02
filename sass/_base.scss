@@ -22,6 +22,12 @@ $margin-top-medium: 7.5rem;
 $margin-top-big: 15rem;
 $margin-top-huge: 20rem;
 
+//RESPONSIVE BRAKEPOINTS
+$bp-largest: 75em; //1200px
+$bp-large: 62.5em; //1000px
+$bp-medium: 50em; // 800px
+$bp-small: 37.5em; // 600px
+
 *,
 *::before,
 *::after {
@@ -33,6 +39,10 @@ $margin-top-huge: 20rem;
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 50%;
+  }
 }
 
 body {
