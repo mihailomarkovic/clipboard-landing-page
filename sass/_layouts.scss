@@ -2,8 +2,6 @@
   &__sides--container {
     display: flex;
     gap: 15rem;
-
-    margin-top: 7.5rem;
   }
 
   &__left--side {
@@ -11,11 +9,12 @@
     flex-direction: column;
     justify-content: space-evenly;
     width: 25%;
+    margin-top: $margin-top-medium;
   }
 }
 
 .cards {
-  margin-top: 7.5rem;
+  margin-top: $margin-top-medium;
   display: flex;
   justify-content: space-between;
 }

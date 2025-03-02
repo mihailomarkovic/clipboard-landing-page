@@ -5,18 +5,29 @@
 }
 
 .heading-primary {
-  margin-top: 3rem;
+  margin-top: $margin-top-tiny;
   font-size: $font-size-huge;
 }
 
 .heading-secondary {
-  margin-top: 15rem;
+  margin-top: $margin-top-big;
   font-size: $font-size-big;
+}
+
+.subheading {
+  margin-top: $margin-top-tiny;
 }
 
 .text {
   color: $color-grayish-blue;
   margin-top: 2rem;
+  line-height: 1.75;
+}
+
+.blockquote {
+  .text {
+    margin-top: 1rem;
+  }
 }
 
 .btn--ios {

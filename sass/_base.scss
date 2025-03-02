@@ -12,6 +12,13 @@ $font-size-medium: 1.8rem;
 $font-size-big: 3.6rem;
 $font-size-huge: 4rem;
 
+// MARGINS
+
+$margin-top-tiny: 3rem;
+$margin-top-small: 5rem;
+$margin-top-medium: 7.5rem;
+$margin-top-big: 15rem;
+
 *,
 *::before,
 *::after {
@@ -26,17 +33,9 @@ html {
 }
 
 body {
+  color: $color-grayish-blue;
   font-size: $font-size-medium;
   font-family: "Bai Jamjuree", sans-serif;
   font-weight: 400;
   font-style: normal;
-}
-
-.flex-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 63rem;
-  margin: 0 auto;
-  text-align: center;
 }
