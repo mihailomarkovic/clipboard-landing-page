@@ -14,7 +14,14 @@
 }
 
 .cards {
-  margin-top: $margin-top-medium;
+  margin: $margin-top-medium 10rem 0 10rem;
   display: flex;
   justify-content: space-between;
+}
+
+.section-logos {
+  margin: $margin-top-huge 10rem 0 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
