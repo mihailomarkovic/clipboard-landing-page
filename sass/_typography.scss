@@ -29,23 +29,3 @@
     margin-top: 1rem;
   }
 }
-
-.btn--ios {
-  background-color: $color-cyan;
-  color: #fff;
-
-  &:hover {
-    background-color: rgba($color-cyan, 0.8);
-    box-shadow: 0 5px 5px rgba($color-cyan, 0.4);
-  }
-}
-
-.btn--mac {
-  background-color: $color-light-blue;
-
-  color: #fff;
-  &:hover {
-    background-color: rgba($color-light-blue, 0.8);
-    box-shadow: 0 5px 5px rgba($color-light-blue, 0.4);
-  }
-}

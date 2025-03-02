@@ -2,9 +2,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 63rem;
+  width: 45%;
   margin: 0 auto;
   text-align: center;
+
+  @media only screen and (max-width: $bp-largest) {
+    width: 50%;
+  }
+  @media only screen and (max-width: $bp-large) {
+    width: 65%;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    width: 80%;
+  }
 }
 
 .btn {
@@ -25,6 +35,30 @@
     border-radius: 100px;
     display: flex;
     gap: 3rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+      flex-direction: column;
+    }
+  }
+}
+
+.btn--ios {
+  background-color: $color-cyan;
+  color: #fff;
+
+  &:hover {
+    background-color: rgba($color-cyan, 0.8);
+    box-shadow: 0 5px 5px rgba($color-cyan, 0.4);
+  }
+}
+
+.btn--mac {
+  background-color: $color-light-blue;
+
+  color: #fff;
+  &:hover {
+    background-color: rgba($color-light-blue, 0.8);
+    box-shadow: 0 5px 5px rgba($color-light-blue, 0.4);
   }
 }
 
